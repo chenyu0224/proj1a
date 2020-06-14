@@ -78,7 +78,7 @@ public class ArrayDeque <Group>{
 	public void addFirst(Group x) {
 		
 		if(isFull()) {
-			resize(size*2);//此时RFACTOR=0.5;
+			resize(size*2);//麓脣脢卤RFACTOR=0.5;
 		}
 		items[nextFirst] = x;
 		nextFirst = minus(nextFirst);
@@ -92,7 +92,7 @@ public class ArrayDeque <Group>{
 	public void addLast(Group x) {
 		
 		if(isFull()) {
-			resize(size*2);//此时RFACTOR=0.5;
+			resize(size*2);//麓脣脢卤RFACTOR=0.5;
 		}
 		items[nextLast] = x;
 		nextLast = plus(nextLast);
@@ -157,19 +157,5 @@ public class ArrayDeque <Group>{
 		System.out.println();
 	}
 	
-	public static void main(String[] args) {
-		ArrayDeque<Integer> items = new ArrayDeque<>();
-		items.addFirst(5);
-		items.addFirst(7);
-		items.addLast(63);
-		items.addLast(45);
-		items.addLast(89);
-		items.addLast(34);
-		System.out.println(items.size);
-//		System.out.println(items.get(1));
-//		items.remove();
-		items.printDeque();
-		System.out.println(items.get(3));
-		
-	}
+	
 }
